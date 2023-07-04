@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Puneet Rajkumar Tribute</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    #header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    #container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #f7f7f7;
+      border: 1px solid #590707;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    #image {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    #content {
+      line-height: 1.5;
+    }
+    
+    #quote {
+      text-align: center;
+      font-style: italic;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <h1>Tribute to Puneet Rajkumar</h1>
+  </div>
+  
+  <div id="container">
+    <div id="image">
+      <img src="puneeth-rajkumar.jpg" alt="Puneet Rajkumar" width="300">
+    </div>
+    
+    <div id="content">
+      <h2>About Puneet Rajkumar</h2>
+      <p>Puneet Rajkumar was a renowned Indian actor in the Kannada film industry. He was born on March 17, 1975, in Chennai, Tamil Nadu, India. He hailed from the prestigious Rajkumar family, known for their contributions to Kannada cinema.</p>
+      
+      <p>Puneet Rajkumar made his acting debut as a child artist in the film "Premada Kanike" in 1976. He later appeared in several successful films, earning him a huge fan following. Some of his notable movies include "Appu," "Milana," "Rajakumara," "Natasarvabhouma,"and "Yuvarathna."</p>
+      
+      <p>Known for his charismatic on-screen presence and versatile acting skills, Puneet Rajkumar received numerous awards and accolades throughout his career. He was not only an actor but also a playback singer and a television presenter.</p>
+      
+      <h2>Legacy</h2>
+      <p>Puneet Rajkumar's sudden demise on October 29, 2021, left his fans and the film industry in shock. His contributions to Kannada cinema and his philanthropic endeavors will always be remembered. Puneet Rajkumar's legacy lives on through his remarkable performances and the love of his fans.</p>
+      
+      <h2>Quotes</h2>
+      <p id="quote"></p>
+    </div>
+  </div>
+  
+  <script>
+    const quotes = [
+      "Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful.",
+      "Life is too short to hold grudges. Forgive and forget, and embrace happiness.",
+      "Believe in yourself and your abilities. You have the power to achieve great things.",
+      "Cherish every moment and live life to the fullest. Life is a precious gift.",
+      "Spread love and positivity wherever you go. The world needs more of it."
+    ];
+    
+    function getRandomQuote() {
+      const randomIndex = Math.floor(Math.random() * quotes.length);
+      return quotes[randomIndex];
+    }
+    
+    document.getElementById("quote").textContent = getRandomQuote();
+  </script>
+</body>
+</html>
